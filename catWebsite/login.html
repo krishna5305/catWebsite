@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .out {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid;
+            margin: 20px;
+            padding: 50px;
+            background-color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .log {
+            margin: 5px;
+            border-radius: 15px;
+            outline: none;
+            border: 1px solid gray;
+            padding: 10px 50px;
+            transition: all 0.3s ease;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            padding: 10px 30px;
+            width: 350px;
+            display: flex;
+            text-align: center;
+            font-size: 19px;
+        }
+
+        .log:hover,
+        .reg:hover {
+            border: 1px solid black;
+            transform: scale(1.03);
+        }
+
+        .btns {
+            padding: 15px 55px;
+            border-radius: 20px;
+            border: 1px solid;
+            transition: 0.3s ease;
+            background-color: bisque;
+            font-weight: bold;
+            margin: 10px;
+            font-size: 15px;
+        }
+
+        .btns:hover {
+            transform: scale(0.9);
+        }
+        #ac{
+            color: brown;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="out">
+        <div class="container">
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="Email" class="log" required>
+            <label for="password"></label>
+            <input type="password" name="password" id="password" placeholder="password" class="log" required>
+            <input type="button" value="LOGIN" class="btns" id="bt1">
+            <input type="button" value="Home" onclick="history.back()" class="btns" >
+            <div class="acc">
+                <strong>Dont have an account ?</strong>
+                <a href="register.html" id="ac" class="ac">Register here</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

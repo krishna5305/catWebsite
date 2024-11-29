@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .out {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid;
+            margin: 20px;
+            padding: 50px;
+            background-color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .reg {
+            margin: 5px;
+            border-radius: 15px;
+            outline: none;
+            border: 1px solid gray;
+            padding: 10px 50px;
+            transition: all 0.3s ease;
+        }
+
+        input[type="email"],
+        input[type="password"],
+        input[type="text"],
+        input[type="number"] {
+            padding: 10px 30px;
+            width: 350px;
+            display: flex;
+            text-align: center;
+            font-size: 19px;
+        }
+        .reg:hover {
+            border: 1px solid black;
+            transform: scale(1.03);
+        }
+
+        .btns {
+            padding: 15px 55px;
+            border-radius: 20px;
+            border: 1px solid;
+            transition: 0.3s ease;
+            background-color: bisque;
+            font-weight: bold;
+            margin: 10px;
+            font-size: 15px;
+        }
+
+        .btns:hover {
+            transform: scale(0.9);
+        }
+
+        #ac {
+            color: brown;
+            font-weight: bold;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="out">
+        <div class="container">
+            <label for="name"></label>
+            <input type="text" name="name" id="name" class="reg" placeholder="Name">
+            <label for="phone"></label>
+            <input type="number" name="phone" id="phone" class="reg" placeholder="Phone">
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="Email" class="reg">
+            <label for="password"></label>
+            <input type="password" name="password" id="password" placeholder="password" class="reg">
+            <input type="button" value="REGISTER" class="btns">
+            <input type="button" value="Home" onclick="history.back()" class="btns" >
+            <div class="acc">
+                Already have an account ?
+                <a href="login.html" id="ac">Login here</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

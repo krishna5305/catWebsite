@@ -1,0 +1,81 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="gridy">
+        <div class="head">
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Cat food</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="#">Cat wash</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </div>
+        <div class="item1">
+            <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNhdHxlbnwwfHwwfHx8MA%3D%3D"
+                alt="cat4" class="image">
+            <h4>Bishi</h4>
+        </div>
+        <div class="item2">
+            <h2>I AM KRISHNA PANCHAJANYA</h2>
+            <h3>I HAVE A CAT SHOP</h3>
+        </div>
+        <div class="item3">
+            <img src="https://plus.unsplash.com/premium_photo-1673967831980-1d377baaded2?q=80&w=2465&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="cat2" class="image">
+            <h4>Chase</h4>
+        </div>
+    </div>
+    <div class="grid2">
+        <div class="con1">
+            <h2>ENTER INTO THE WORLD OF CATS</h2>
+        </div>
+        <div class="con2">
+            <img src="https://images.unsplash.com/photo-1503777119540-ce54b422baff?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNhdHxlbnwwfHwwfHx8MA%3D%3D"
+                alt="cat1" class="image">
+            <h4>Leo</h4>
+        </div>
+        <div class="con3">
+            <img src="https://images.unsplash.com/photo-1571566882372-1598d88abd90?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhdHxlbnwwfHwwfHx8MA%3D%3D"
+                alt="cat2" class="image">
+            <h4>Asteroid destroyer</h4>
+        </div>
+        <div class="con4">
+            <img src="https://images.unsplash.com/photo-1455970022149-a8f26b6902dd?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2F0fGVufDB8fDB8fHww"
+                alt="cat3" class="image">
+            <h4>Tiger</h4>
+        </div>
+        <div class="con5">
+            <h2>We even babysit your cats when you are out</h2>
+        </div>
+    </div>
+    <div class="foot">
+        <h3>For more information contact: 9502784507</h3>
+        <label for="location"></label>
+        <input type="button" value="Location" class="btns">
+    </div>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.head nav ul').classList.toggle('active');
+        }
+        function toggleMenu() {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
